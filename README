@@ -1,0 +1,37 @@
+hAPI-objective-C: is a hAPI objective-c class for Xcode 
+that can be used to develop iOS and Mac OS X applications
+that can directly communicate with hAPI.
+
+Internap Network Services Corporation and Mochila Inc.
+http://api.voxel.net/docs/
+
+See the hAPI docs at http://api.voxel.net/docs/ for details 
+of hAPI. 
+
+This package includes the following:
+
+• hAPI class to authenticate hAPI and make hAPI calls
+• An example Xcode project that builds an iPhone application
+that allows a user to make hAPI calls by entering a hAPI 
+method and method parameters.
+
+The main class methods of interest are:
+
+- (NSDictionary *)fetchAuthTokenAndSecret:(NSString *)username 
+                                 password:(NSString *)password
+
+Given a hAPI username and password, this method will return a 
+dictionary containing the hAPI Key and Secret needed to make
+hAPI calls.
+
+
+- (NSDictionary *)makehAPICall:(NSString *)method 
+                        params:(NSDictionary *)params 
+                       withKey:(NSString *)key 
+                    withSecret:(NSString *)secret
+
+Given a hAPI method (IE - voxel.test.echo) and a dictionary 
+of parameters (key value pairs), along with hAPI Key and Secret
+acquired from the fetchAuthTokenAndSecret method call, this method 
+will return a dictionary object representation of the json output 
+from a hAPI call. 

@@ -1,0 +1,428 @@
+ThAPI
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Info.plist hAPI/hAPI-Info.plist
+cProcessPCH /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth hAPI/hAPI-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o /Developer/hAPI/hAPI/hAPIAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o /Developer/hAPI/hAPI/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o /Developer/hAPI/hAPI/hAPIViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o /Developer/hAPI/hAPI/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o /Developer/hAPI/hAPI/CustomButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o /Developer/hAPI/hAPI/hAPI.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI normal i386
+cGenerateDSYMFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI
+cCpResource hAPI/Default.png build/Debug-iphonesimulator/hAPI.app/Default.png
+cCpResource hAPI/Default@2x.png build/Debug-iphonesimulator/hAPI.app/Default@2x.png
+cCompileStoryboard /Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard
+cCpResource hAPI/Default-568h@2x.png build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png
+cCopyStringsFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/InfoPlist.strings hAPI/en.lproj/InfoPlist.strings
+cTouch /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000050A43ABA0000000000228FD0
+t1352940218
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000050A43ABB00000000003DCEF0
+t1352940219
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c0000000050A43ABB00000000000015F7
+t1352940219
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000050A43ABE00000000001D57A0
+t1352940222
+s1922976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c0000000050A43ABE0000000000000E8D
+t1352940222
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000050A43ABF0000000000AB3D60
+t1352940223
+s11222368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/Availability.h
+c0000000050A43AC80000000000001B54
+t1352940232
+s6996
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app
+t1352946894
+s306
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM
+t1352946894
+s102
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png
+t1352944443
+s18594
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default.png
+t1352944443
+s6540
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default@2x.png
+t1352944443
+s16107
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Info.plist
+t1352944443
+s829
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/PkgInfo
+t1352944443
+s8
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/InfoPlist.strings
+t1352944443
+s42
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/MainStoryboard.storyboardc
+t1352945890
+s170
+
+N/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI
+t1352946894
+s66052
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o
+t1352944443
+s73980
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o
+t1352944443
+s10596
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.LinkFileList
+c0000000050A44B3B0000000000000258
+t1352944443
+s600
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o
+t1352944443
+s36904
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o
+t1352944443
+s86444
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o
+t1352946894
+s115764
+
+N/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o
+t1352944443
+s3228
+
+N/Developer/hAPI/hAPI/CustomButton.h
+c0000000050A437F00000000000000101
+t1352939504
+s257
+
+N/Developer/hAPI/hAPI/CustomButton.m
+c0000000050A4380D0000000000000685
+t1352939533
+s1669
+
+N/Developer/hAPI/hAPI/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Developer/hAPI/hAPI/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Developer/hAPI/hAPI/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Developer/hAPI/hAPI/NSData+Base64.h
+c000000004F47A6B10000000000000112
+t1330095793
+s274
+
+N/Developer/hAPI/hAPI/NSData+Base64.m
+c000000004F47A6B10000000000000789
+t1330095793
+s1929
+
+N/Developer/hAPI/hAPI/en.lproj/InfoPlist.strings
+c0000000050A0D538000000000000002D
+t1352717624
+s45
+
+N/Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard
+c0000000050A450DA00000000000058F1
+t1352945882
+s22769
+
+N/Developer/hAPI/hAPI/hAPI-Prefix.pch
+c0000000050A0D5380000000000000137
+t1352717624
+s311
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Developer/hAPI/hAPI/hAPI.h
+c0000000050A3E07D00000000000002EC
+t1352917117
+s748
+
+N/Developer/hAPI/hAPI/hAPI.m
+c0000000050A3E0E20000000000001C1A
+t1352917218
+s7194
+
+N/Developer/hAPI/hAPI/hAPIAppDelegate.h
+c0000000050A0D538000000000000011F
+t1352717624
+s287
+
+N/Developer/hAPI/hAPI/hAPIAppDelegate.m
+c0000000050A0D53800000000000007E5
+t1352717624
+s2021
+
+N/Developer/hAPI/hAPI/hAPIKey.h
+c0000000050A0D8020000000000000068
+t1352718338
+s104
+
+N/Developer/hAPI/hAPI/hAPIViewController.h
+c0000000050A3D26B0000000000000536
+t1352913515
+s1334
+
+N/Developer/hAPI/hAPI/hAPIViewController.m
+c0000000050A454CD00000000000011BC
+t1352946893
+s4540
+
+N/Developer/hAPI/hAPI/main.m
+c0000000050A0D538000000000000015A
+t1352717624
+s346
+
+N/var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth
+t1352944443
+s4840144
+
+NhAPI/hAPI-Info.plist
+c0000000050A4341200000000000004D7
+t1352938514
+s1239
+
+CBuild AST from /Developer/hAPI/hAPI/CustomButton.m
+r0
+
+CBuild AST from /Developer/hAPI/hAPI/NSData+Base64.m
+r0
+
+CBuild AST from /Developer/hAPI/hAPI/hAPI.m
+r0
+
+CBuild AST from /Developer/hAPI/hAPI/hAPIAppDelegate.m
+r0
+
+CBuild AST from /Developer/hAPI/hAPI/hAPIViewController.m
+r0
+
+CBuild AST from /Developer/hAPI/hAPI/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa453a3508c54b641^2593a3508c54b641^---0#1#0#--18"Check dependencies36"4FE322A5-72EB-4B5C-BD9C-CCA4F04A8BBE-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o /Developer/hAPI/hAPI/CustomButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.289916
+e374637243.356262
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o
+x/Developer/hAPI/hAPI/CustomButton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Compile /Developer/hAPI/hAPI/CustomButton.mc9574abb8254b641^bd365bbb8254b641^---0#0#0#-19%DVTDocumentLocation2@51"file://localhost/Developer/hAPI/hAPI/CustomButton.m0000000000000000^3144"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o hAPI/CustomButton.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.dia -c /Developer/hAPI/hAPI/CustomButton.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/CustomButton.o36"69CD4728-9ED1-4D97-B806-05B1F1997B46-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o /Developer/hAPI/hAPI/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.289915
+e374637243.332442
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o
+x/Developer/hAPI/hAPI/NSData+Base64.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Compile /Developer/hAPI/hAPI/NSData+Base64.mde564abb8254b641^e31c55bb8254b641^---0#0#0#-19%DVTDocumentLocation2@52"file://localhost/Developer/hAPI/hAPI/NSData+Base64.m0000000000000000^3150"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o hAPI/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.dia -c /Developer/hAPI/hAPI/NSData+Base64.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/NSData+Base64.o36"3F1C2C29-F692-4DEE-9080-47D8F080BBC5-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o /Developer/hAPI/hAPI/hAPI.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.289905
+e374637243.344172
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o
+x/Developer/hAPI/hAPI/hAPI.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Compile /Developer/hAPI/hAPI/hAPI.m5c554abb8254b641^a81b58bb8254b641^---0#0#0#-19%DVTDocumentLocation2@43"file://localhost/Developer/hAPI/hAPI/hAPI.m0000000000000000^3096"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o hAPI/hAPI.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.dia -c /Developer/hAPI/hAPI/hAPI.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.o36"3B040936-3816-4E7E-96F1-2BECB2C8052A-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o /Developer/hAPI/hAPI/hAPIAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.289896
+e374637243.353573
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o
+x/Developer/hAPI/hAPI/hAPIAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Developer/hAPI/hAPI/hAPIAppDelegate.m4d4d4abb8254b641^90835abb8254b641^---0#0#0#-19%DVTDocumentLocation2@54"file://localhost/Developer/hAPI/hAPI/hAPIAppDelegate.m0000000000000000^3162"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o hAPI/hAPIAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.dia -c /Developer/hAPI/hAPI/hAPIAppDelegate.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIAppDelegate.o36"DE14D2A8-6753-4E4A-813F-4164E921A1C1-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o /Developer/hAPI/hAPI/hAPIViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374639694.377501
+e374639694.442571
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o
+x/Developer/hAPI/hAPI/hAPIViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Compile /Developer/hAPI/hAPI/hAPIViewController.m40be604e8c54b641^a94c714e8c54b641^---0#0#0#-19%DVTDocumentLocation2@57"file://localhost/Developer/hAPI/hAPI/hAPIViewController.m0000000000000000^3180"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o hAPI/hAPIViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.dia -c /Developer/hAPI/hAPI/hAPIViewController.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPIViewController.o36"2609A3C0-8186-4F25-ACB1-1BB10716981C-
+
+CCompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o /Developer/hAPI/hAPI/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.289886
+e374637243.316738
+r1
+xCompileC
+xbuild/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o
+x/Developer/hAPI/hAPI/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Compile /Developer/hAPI/hAPI/main.m2b4d4abb8254b641^441651bb8254b641^---0#0#0#-19%DVTDocumentLocation2@43"file://localhost/Developer/hAPI/hAPI/main.m0000000000000000^3096"CompileC build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o hAPI/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator -include /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch -MMD -MT dependencies -MF /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.d --serialize-diagnostics /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.dia -c /Developer/hAPI/hAPI/main.m -o /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/main.o36"E2B26578-69CF-4CC6-8632-34C5169B1AF3-
+
+CCompileStoryboard /Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard
+s374638690.114524
+e374638690.323470
+r1
+xCompileStoryboard
+x/Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"CompileStoryboard hAPI/en.lproj/MainStoryboard.storyboardf1621d628854b641^31cf52628854b641^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard0000000000000000^866"CompileStoryboard hAPI/en.lproj/MainStoryboard.storyboard    cd /Developer/hAPI    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/MainStoryboard.storyboardc /Developer/hAPI/hAPI/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"45238984-510A-4D92-ACAC-7E1B2DBD9FE0-
+
+CCopyStringsFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/InfoPlist.strings hAPI/en.lproj/InfoPlist.strings
+s374637243.509888
+e374637243.545101
+r1
+xCopyStringsFile
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj/InfoPlist.strings
+xhAPI/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy hAPI/en.lproj/InfoPlist.strings079b82bb8254b641^008c8bbb8254b641^---0#0#0#-19%DVTDocumentLocation2@63"file://localhost/Developer/hAPI/hAPI/en.lproj/InfoPlist.strings0000000000000000^517"CopyStringsFile build/Debug-iphonesimulator/hAPI.app/en.lproj/InfoPlist.strings hAPI/en.lproj/InfoPlist.strings    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/en.lproj -- hAPI/en.lproj/InfoPlist.strings36"D3A7160E-B08B-43FE-9DC0-8F13534BDE3F-
+
+CCpResource hAPI/Default-568h@2x.png build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png
+s374637243.509959
+e374637243.544798
+r1
+xCpResource
+xhAPI/Default-568h@2x.png
+xbuild/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png6f9e82bb8254b641^68788bbb8254b641^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png000000000080d041^523"CpResource "hAPI/Default-568h@2x.png" "build/Debug-iphonesimulator/hAPI.app/Default-568h@2x.png"    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Developer/hAPI/hAPI/Default-568h@2x.png" /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app36"EF878669-F480-4F88-A2C6-F095C5CC18FC-
+
+CCpResource hAPI/Default.png build/Debug-iphonesimulator/hAPI.app/Default.png
+s374637243.509947
+e374637243.543904
+r1
+xCpResource
+xhAPI/Default.png
+xbuild/Debug-iphonesimulator/hAPI.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/hAPI.app/Default.png8c9f82bb8254b641^c03d8bbb8254b641^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default.png000000000080d041^493"CpResource hAPI/Default.png build/Debug-iphonesimulator/hAPI.app/Default.png    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/hAPI/hAPI/Default.png /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app36"2BECE765-FE31-4720-B3E0-067203C15CBF-
+
+CCpResource hAPI/Default@2x.png build/Debug-iphonesimulator/hAPI.app/Default@2x.png
+s374637243.509955
+e374637243.544452
+r1
+xCpResource
+xhAPI/Default@2x.png
+xbuild/Debug-iphonesimulator/hAPI.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/hAPI.app/Default@2x.png5e9e82bb8254b641^30628bbb8254b641^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Default@2x.png000000000080d041^508"CpResource "hAPI/Default@2x.png" "build/Debug-iphonesimulator/hAPI.app/Default@2x.png"    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Developer/hAPI/hAPI/Default@2x.png" /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app36"4B3C74BC-EB67-43EA-9385-05F5F6BB70CB-
+
+CGenerateDSYMFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI
+s374639694.479685
+e374639694.502341
+r1
+xGenerateDSYMFile
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Generating /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYMf1d97a4e8c54b641^469a804e8c54b641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM/0000000000000000^538"GenerateDSYMFile build/Debug-iphonesimulator/hAPI.app.dSYM build/Debug-iphonesimulator/hAPI.app/hAPI    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI -o /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app.dSYM36"0CED9113-2D32-43DA-9645-546C31414FF2-
+
+CLd /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI normal i386
+s374639694.449028
+e374639694.472618
+r1
+xLd
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Link /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPIeb01734e8c54b641^37fe784e8c54b641^---0#0#0#--1033"Ld build/Debug-iphonesimulator/hAPI.app/hAPI normal i386    cd /Developer/hAPI    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Developer/hAPI/build/Debug-iphonesimulator -F/Developer/hAPI/build/Debug-iphonesimulator -filelist /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/Objects-normal/i386/hAPI.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -o /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/hAPI36"E5BE9CE4-63D2-49A2-B243-46E7308BA22C-
+
+CProcessInfoPlistFile /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Info.plist hAPI/hAPI-Info.plist
+s374637243.065219
+e374637243.068275
+r1
+xProcessInfoPlistFile
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Info.plist
+xhAPI/hAPI-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process hAPI/hAPI-Info.plist1abf10bb8254b641^427b11bb8254b641^---0#0#0#-19%DVTDocumentLocation2@52"file://localhost/Developer/hAPI/hAPI/hAPI-Info.plist0000000000000000^560"ProcessInfoPlistFile build/Debug-iphonesimulator/hAPI.app/Info.plist hAPI/hAPI-Info.plist    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility hAPI/hAPI-Info.plist -genpkginfo /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app/Info.plist36"1068194D-0BC7-4512-BDB8-AC6A33A9E3F1-
+
+CProcessPCH /Users/stuart/Library/Developer/Xcode/DerivedData/hAPI-hcsedcycdyznwgfzjklfdbxwyarg/Index/PrecompiledHeaders/hAPI-Prefix-bzstcahljsioqgadeipthcjmsiug_ast/hAPI-Prefix.pch.pth hAPI/hAPI-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth hAPI/hAPI-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s374637243.076144
+e374637243.282876
+r1
+xProcessPCH
+x/var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth
+xhAPI/hAPI-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection31"Precompile hAPI/hAPI-Prefix.pch039713bb8254b641^c26a48bb8254b641^---0#0#0#-19%DVTDocumentLocation2@52"file://localhost/Developer/hAPI/hAPI/hAPI-Prefix.pch0000000000000000^3223"ProcessPCH /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth hAPI/hAPI-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Developer/hAPI    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-generated-files.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-own-target-headers.hmap -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-all-target-headers.hmap -iquote /Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/hAPI-project-headers.hmap -I/Developer/hAPI/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources/i386 -I/Developer/hAPI/build/hAPI.build/Debug-iphonesimulator/hAPI.build/DerivedSources -F/Developer/hAPI/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.dia -c /Developer/hAPI/hAPI/hAPI-Prefix.pch -o /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/1w/985m4h2j0h9dktrqz7y6zzyh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/hAPI-Prefix-ggpivqguueunhrbckhkvzedfvvzt/hAPI-Prefix.pch.d36"FEC27888-5DD2-44BE-9E3C-F493E56D2340-
+
+CTouch /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app
+s374639694.518852
+e374639694.524394
+r1
+xTouch
+x/Developer/hAPI/build/Debug-iphonesimulator/hAPI.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Touch /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app98e0844e8c54b641^ab3f864e8c54b641^---0#0#0#--336"Touch build/Debug-iphonesimulator/hAPI.app    cd /Developer/hAPI    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Developer/hAPI/build/Debug-iphonesimulator/hAPI.app36"522456FB-855F-4B89-8C78-8E23A09780FE-
+
