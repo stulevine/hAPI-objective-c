@@ -2,8 +2,7 @@ hAPI-objective-C: is a hAPI objective-c class for Xcode
 that can be used to develop iOS and Mac OS X applications
 that can directly communicate with hAPI.
 
-Internap Network Services Corporation and Mochila Inc.
-http://api.voxel.net/docs/
+Internap Network Services Corporation http://www.internap.com
 
 See the hAPI docs at http://api.voxel.net/docs/ for details 
 of hAPI. 
