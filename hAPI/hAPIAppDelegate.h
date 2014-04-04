@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "hAPIClient.h"
 
 @interface hAPIAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) hAPIClient *hAPIClient;
+
++ (hAPIAppDelegate *)sharedDelegate;
 
 @end

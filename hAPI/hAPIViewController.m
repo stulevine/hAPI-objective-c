@@ -5,13 +5,17 @@
 //  Created by Stuart Levine on 11/12/12.
 //  Copyright (c) 2012 Stuart Levine. All rights reserved.
 //
-
 #import "hAPIViewController.h"
-#import "CustomButton.h"
+#import "hAPILoginViewController.h"
 
 #define HAPI_PREFIX @"voxel"
 
+#define ShowNetworkActivityIndicator() [UIApplication sharedApplication].networkActivityIndicatorVisible = YES
+#define HideNetworkActivityIndicator() [UIApplication sharedApplication].networkActivityIndicatorVisible = NO
+
 @interface hAPIViewController ()
+@property (nonatomic, strong) hAPILoginViewController *loginViewController;
+@property (strong, nonatomic) IBOutlet UITextField *hAPI_ClientID;
 
 @end
 
@@ -24,8 +28,6 @@
 @synthesize usernameLabel = _usernameLabel;
 @synthesize passwordLabel = _passwordLabel;
 @synthesize output = _output;
-@synthesize hAPI_Key = _hAPI_Key;
-@synthesize hAPI_Secret = _hAPI_Secret;
 @synthesize callLabel = _callLabel;
 @synthesize hAPICall = _hAPICall;
 @synthesize makeCallButton = _makeCallButton;
@@ -33,49 +35,52 @@
 @synthesize params = _params;
 @synthesize paramsLabel = _paramsLabel;
 @synthesize logoutButton = _logoutButton;
+@synthesize hAPI_Endpoint = _hAPI_Endpoint;
+@synthesize loginViewController = _loginViewController;
 
-- (IBAction)authenticateHAPI:(id)sender {
-    [self.password resignFirstResponder];
-    [self.username resignFirstResponder];
-    [self.working startAnimating];
-    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.internaplabs.hAPI", NULL);
-    dispatch_async(backgroundQueue, ^{
-        NSDictionary *result = [_hAPIClient fetchAuthTokenAndSecret:self.username.text password:self.password.text];
-        self.hAPI_Key = [result valueForKey:@"key"];
-        self.hAPI_Secret = [result valueForKey:@"secret"];
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:self.hAPI_Key forKey:@"hAPI_Key"];
-        [defaults setObject:self.hAPI_Secret forKey:@"hAPI_Secret"];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.output.text = [NSString stringWithFormat:@"key = %@\nsecret = %@", self.hAPI_Key, self.hAPI_Secret];
-            [self toggleAuth:YES];
-            [self.working stopAnimating];
-        });
-    });
+- (hAPILoginViewController *)loginViewController {
+    if (_loginViewController == NULL) {
+        _loginViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"Login"];
+    }
+    return _loginViewController;
+}
+
+- (NSString *)hAPI_Endpoint {
+    if (_hAPI_Endpoint == NULL) {
+        _hAPI_Endpoint = @"https://api.voxel.net/version/1.5/";
+    }
+    return _hAPI_Endpoint;
+}
+
+- (hAPIClient *)hAPIClient {
+    if (_hAPIClient == NULL) {
+        hAPIAppDelegate *delegate = [hAPIAppDelegate sharedDelegate];
+        _hAPIClient = delegate.hAPIClient;
+    }
+    return _hAPIClient;
 }
 
 - (IBAction)logout:(id)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    self.hAPI_Key = @"";
-    self.hAPI_Secret = @"";
-    [defaults setObject:self.hAPI_Key forKey:@"hAPI_Key"];
-    [defaults setObject:self.hAPI_Secret forKey:@"hAPI_Secret"];
     self.output.text = @"";
-    [self toggleAuth:NO];
-    
+    [self.hAPIClient resetHAPI];
+    [self presentViewController:self.loginViewController animated:YES completion:^{}];
 }
 
 - (IBAction)makehAPICall:(id)sender {
     [self.hAPICall resignFirstResponder];
     [self.params resignFirstResponder];
+    [self.hAPI_ClientID resignFirstResponder];
+    if ([self.hAPI_ClientID.text length]) {
+        [self.hAPIClient setHAPI_ClientID:self.hAPI_ClientID.text];
+    }
     self.output.text = @"";
     [self.working startAnimating];
     dispatch_queue_t backgroundQueue = dispatch_queue_create("com.internaplabs.hAPI", NULL);
     dispatch_async(backgroundQueue, ^{
-        NSDictionary *results = [_hAPIClient makehAPICall: [NSString stringWithFormat:@"%@.%@", HAPI_PREFIX, self.hAPICall.text]
-                                            params:[hAPI dictFromQueryString: self.params.text]
-                                           withKey:self.hAPI_Key
-                                        withSecret:self.hAPI_Secret];
+        NSDictionary *results = [self.hAPIClient makehAPICall:[NSString stringWithFormat:@"%@.%@", HAPI_PREFIX, self.hAPICall.text]
+                                                        params:[hAPIClient dictFromQueryString: self.params.text]
+                                                    withFormat:@"json"];
+
         dispatch_async(dispatch_get_main_queue(), ^{
             self.output.text = [NSString stringWithFormat:@"%@", results];
             [self.working stopAnimating];
@@ -83,40 +88,18 @@
     });
 }
 
-- (void)toggleAuth:(BOOL)onOff
-{
-    [self.authButton setHidden:onOff];
-    [self.username setHidden:onOff];
-    [self.password setHidden:onOff];
-    [self.usernameLabel setHidden:onOff];
-    [self.passwordLabel setHidden:onOff];
-    [self.makeCallButton setHidden:!onOff];
-    [self.callLabel setHidden:!onOff];
-    [self.hAPICall setHidden:!onOff];
-    [self.logoutButton setHidden:!onOff];
-    [self.paramsLabel setHidden:!onOff];
-    [self.params setHidden:!onOff];
-    [self.outputFormat setHidden:!onOff];
-    [self.formatLabel setHidden:!onOff];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [CustomButton addGradient:self.logoutButton];
-    [CustomButton addGradient:self.authButton];
-    [CustomButton addGradient:self.makeCallButton];
+- (void)viewDidAppear:(BOOL)animated {
+    if (![self.hAPIClient authenticated]) {
+        [self presentViewController:self.loginViewController animated:YES completion:^{}];
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _hAPIClient = [[hAPI alloc] initWithEndPoint:@"https://api.voxel.net/version/1.0/"];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    self.hAPI_Key = [defaults objectForKey:@"hAPI_Key"];
-    self.hAPI_Secret = [defaults objectForKey:@"hAPI_Secret"];
-    if ([self.hAPI_Key length] && [self.hAPI_Secret length]) {
-        [self toggleAuth:YES];
-    }
+    [self.hAPICall setDelegate:self];
+    [self.params setDelegate:self];
+    [self.hAPI_ClientID setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -130,4 +113,17 @@
     [self setFormatLabel:nil];
     [super viewDidUnload];
 }
+
+- (BOOL)shouldAutorotate {
+    return false;
+}
+
+#pragma Mark UITextFieldDelegate Methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
+
 @end

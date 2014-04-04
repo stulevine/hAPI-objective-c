@@ -1,4 +1,5 @@
-dependencies: /Developer/hAPI/hAPI/hAPIViewController.m \
-  /Developer/hAPI/hAPI/hAPIViewController.h /Developer/hAPI/hAPI/hAPI.h \
-  /Developer/hAPI/hAPI/hAPIAppDelegate.h \
-  /Developer/hAPI/hAPI/CustomButton.h
+dependencies: /Developer/hAPI-objective-c/hAPI/hAPIViewController.m \
+  /Developer/hAPI-objective-c/hAPI/hAPIViewController.h \
+  /Developer/hAPI-objective-c/hAPI/hAPIAppDelegate.h \
+  /Developer/hAPI-objective-c/hAPIClient/hAPIClient.h \
+  /Developer/hAPI-objective-c/hAPI/hAPILoginViewController.h

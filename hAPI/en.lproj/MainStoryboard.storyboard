@@ -1,214 +1,200 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--HAPI View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="hAPIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xfV-3l-n2U"/>
+                        <viewControllerLayoutGuide type="bottom" id="Awk-NV-iWC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXA-su-sFr">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="N7n-Dm-vma"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Authenticate">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="authenticateHAPI:" destination="2" eventType="touchUpInside" id="fc8-Ar-QHQ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hAPI Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGi-Kq-0Yp">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="EX8-5Z-1Nh"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="hAPI Output:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-QX-vAW">
+                                <rect key="frame" x="20" y="194" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hAPI Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9o-xW-ByJ">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hAPI Output:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-QX-vAW">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Onx-Dl-OIj">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcb-cF-eNC">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0T-gH-Xcc">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="1" constant="329" type="user" id="VEG-0X-98c"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0T-gH-Xcc">
+                                <rect key="frame" x="20" y="223" width="280" height="301"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.87058823529999996" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hAPI Method:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-Z5-wiD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="hAPI Method Call:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-Z5-wiD">
+                                <rect key="frame" x="20" y="44" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icU-is-4Xm">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-bW-WoB">
-                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
-                            </activityIndicatorView>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2v-y0-C9f">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="204" id="Js7-s4-3TA"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test.echo" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icU-is-4Xm">
+                                <rect key="frame" x="20" y="73" width="283" height="30"/>
                                 <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Params:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-Sc-DuO">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-bW-WoB">
+                                <rect key="frame" x="142" y="355" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="foo=bar" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2v-y0-C9f">
+                                <rect key="frame" x="99" y="111" width="204" height="30"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Params:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-Sc-DuO">
+                                <rect key="frame" x="20" y="115" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-4I-UTo">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="frI-zw-zfc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Client ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51w-A0-fiD">
+                                <rect key="frame" x="20" y="153" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-4I-UTo">
+                                <rect key="frame" x="195" y="189" width="105" height="31"/>
                                 <state key="normal" title="Make hAPI Call">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="makehAPICall:" destination="2" eventType="touchUpInside" id="SR7-lh-AUw"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW8-7T-Pw6">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="ukH-7q-270"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW8-7T-Pw6">
+                                <rect key="frame" x="236" y="532" width="64" height="31"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.62884646050000004" green="0.068032778560000007" blue="0.02705459625" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="logout:" destination="2" eventType="touchUpInside" id="iLo-mf-ANf"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-5l-tt9">
+                                <rect key="frame" x="99" y="149" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="b2v-y0-C9f" firstAttribute="top" secondItem="3" secondAttribute="top" constant="89" id="1EJ-6j-LkD"/>
-                            <constraint firstAttribute="bottom" secondItem="z0T-gH-Xcc" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="1Tp-G8-QRp"/>
-                            <constraint firstItem="z0T-gH-Xcc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="199" type="user" id="1hX-Mi-beq"/>
-                            <constraint firstAttribute="trailing" secondItem="icU-is-4Xm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2Jx-Rr-rq3"/>
-                            <constraint firstItem="Ilu-bW-WoB" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="2oi-Ft-0Wf"/>
-                            <constraint firstItem="Tcb-cF-eNC" firstAttribute="top" secondItem="Onx-Dl-OIj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3YO-9F-1GG"/>
-                            <constraint firstItem="PGi-Kq-0Yp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3xl-dx-AIJ"/>
-                            <constraint firstItem="FDi-4I-UTo" firstAttribute="top" secondItem="eXA-su-sFr" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4JL-tE-Qs5"/>
-                            <constraint firstItem="Llt-QX-vAW" firstAttribute="top" secondItem="XW8-7T-Pw6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4UB-u0-MDR"/>
-                            <constraint firstItem="icU-is-4Xm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Arc-nT-d16"/>
-                            <constraint firstItem="Tcb-cF-eNC" firstAttribute="leading" secondItem="Onx-Dl-OIj" secondAttribute="leading" type="default" id="BVn-lJ-IzW"/>
-                            <constraint firstItem="Onx-Dl-OIj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="16" id="CKB-B9-hb4"/>
-                            <constraint firstItem="L9o-xW-ByJ" firstAttribute="baseline" secondItem="Tcb-cF-eNC" secondAttribute="baseline" type="default" id="Hpc-ce-bHr"/>
-                            <constraint firstItem="V6v-Sc-DuO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NW8-PE-NjA"/>
-                            <constraint firstAttribute="trailing" secondItem="b2v-y0-C9f" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NeX-gY-0yy"/>
-                            <constraint firstItem="z0T-gH-Xcc" firstAttribute="top" secondItem="Llt-QX-vAW" secondAttribute="bottom" priority="488" constant="8" symbolic="YES" type="user" id="O9b-pf-D5y"/>
-                            <constraint firstItem="L9o-xW-ByJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QOm-lJ-5Lr"/>
-                            <constraint firstItem="FDi-4I-UTo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QqH-Es-kWC"/>
-                            <constraint firstAttribute="trailing" secondItem="z0T-gH-Xcc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="R9E-nT-CHZ"/>
-                            <constraint firstItem="XW8-7T-Pw6" firstAttribute="top" secondItem="FDi-4I-UTo" secondAttribute="top" type="default" id="RDs-nc-Ynp"/>
-                            <constraint firstItem="e9S-Z5-wiD" firstAttribute="baseline" secondItem="Onx-Dl-OIj" secondAttribute="baseline" type="default" id="Rk6-lS-6Gm"/>
-                            <constraint firstItem="Llt-QX-vAW" firstAttribute="top" secondItem="FDi-4I-UTo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Y8w-to-3CB"/>
-                            <constraint firstItem="Llt-QX-vAW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="alo-9o-m5r"/>
-                            <constraint firstItem="V6v-Sc-DuO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="93" id="cIn-yx-dz8"/>
-                            <constraint firstAttribute="trailing" secondItem="Onx-Dl-OIj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hFU-yI-Gal"/>
-                            <constraint firstItem="z0T-gH-Xcc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="icq-Ae-2G6"/>
-                            <constraint firstItem="icU-is-4Xm" firstAttribute="top" secondItem="e9S-Z5-wiD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jvP-of-R7Z"/>
-                            <constraint firstItem="eXA-su-sFr" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lJv-q8-JnV"/>
-                            <constraint firstAttribute="trailing" secondItem="XW8-7T-Pw6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lp1-5c-l1D"/>
-                            <constraint firstItem="Ilu-bW-WoB" firstAttribute="centerX" secondItem="Llt-QX-vAW" secondAttribute="centerX" type="default" id="lxy-Yb-Ev0"/>
-                            <constraint firstItem="e9S-Z5-wiD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nM3-GG-bB9"/>
-                            <constraint firstAttribute="trailing" secondItem="Tcb-cF-eNC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="oyB-vz-sPH"/>
-                            <constraint firstItem="PGi-Kq-0Yp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="pQ3-XU-KzT"/>
-                            <constraint firstAttribute="trailing" secondItem="Llt-QX-vAW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tfL-nc-gEa"/>
-                            <constraint firstItem="e9S-Z5-wiD" firstAttribute="trailing" secondItem="eXA-su-sFr" secondAttribute="trailing" type="default" id="two-Iq-ONN"/>
-                            <constraint firstItem="Onx-Dl-OIj" firstAttribute="leading" secondItem="PGi-Kq-0Yp" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="uGK-M2-SN1"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="authButton" destination="eXA-su-sFr" id="8ku-fQ-14Z"/>
                         <outlet property="callLabel" destination="e9S-Z5-wiD" id="0Gl-F9-xFi"/>
                         <outlet property="hAPICall" destination="icU-is-4Xm" id="23Z-fd-jYi"/>
+                        <outlet property="hAPI_ClientID" destination="Hf5-5l-tt9" id="5No-Qn-Hfp"/>
                         <outlet property="logoutButton" destination="XW8-7T-Pw6" id="MtK-O7-7ue"/>
                         <outlet property="makeCallButton" destination="FDi-4I-UTo" id="uGe-Vc-rDE"/>
                         <outlet property="output" destination="z0T-gH-Xcc" id="tvI-p5-Fqh"/>
                         <outlet property="params" destination="b2v-y0-C9f" id="47Y-JJ-u3R"/>
                         <outlet property="paramsLabel" destination="V6v-Sc-DuO" id="ODR-vL-cvv"/>
-                        <outlet property="password" destination="Tcb-cF-eNC" id="3Ee-vm-taf"/>
-                        <outlet property="passwordLabel" destination="L9o-xW-ByJ" id="Wgl-6V-Gwn"/>
-                        <outlet property="username" destination="Onx-Dl-OIj" id="jcj-ii-DgA"/>
-                        <outlet property="usernameLabel" destination="PGi-Kq-0Yp" id="M0Y-he-hk5"/>
                         <outlet property="working" destination="Ilu-bW-WoB" id="prI-O8-OWA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="113"/>
+            <point key="canvasLocation" x="-16" y="107"/>
+        </scene>
+        <!--HAPI Login View Controller-->
+        <scene sceneID="btO-od-GZP">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="zXd-Yd-OYm" customClass="hAPILoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PXK-jK-kqn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ONn-gi-KiP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IF1-Be-N8X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internap Hosting API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knh-cr-6Iu">
+                                <rect key="frame" x="19" y="25" width="281" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-BJ-4rO">
+                                <rect key="frame" x="19" y="173" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98b-82-zCZ">
+                                <rect key="frame" x="22" y="210" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endpoint:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-F2-9HS">
+                                <rect key="frame" x="29" y="248" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="maD-u4-DDR">
+                                <rect key="frame" x="114" y="169" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5V-QE-CAe">
+                                <rect key="frame" x="114" y="207" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0m-el-zix">
+                                <rect key="frame" x="123" y="291" width="75" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="zXd-Yd-OYm" eventType="touchUpInside" id="AVx-C7-JDS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88R-t1-ccX">
+                                <rect key="frame" x="114" y="245" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.040763955999999997" green="0.30042392000000001" blue="0.59728502999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hAPIEndpoint" destination="88R-t1-ccX" id="XXN-xU-VKt"/>
+                        <outlet property="password" destination="c5V-QE-CAe" id="bU4-jM-aP5"/>
+                        <outlet property="username" destination="maD-u4-DDR" id="uGY-Iy-F6z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRz-ko-1Kr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="107"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="hAPIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/hAPIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="authenticateHAPI:"/>
-                <relationship kind="action" name="logout:"/>
-                <relationship kind="action" name="makehAPICall:"/>
-                <relationship kind="outlet" name="authButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="callLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="formatLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="hAPICall" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="logoutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="makeCallButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="output" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="outputFormat" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="params" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="paramsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="passwordLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="working" candidateClass="UIActivityIndicatorView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

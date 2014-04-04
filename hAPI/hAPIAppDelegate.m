@@ -9,6 +9,12 @@
 #import "hAPIAppDelegate.h"
 
 @implementation hAPIAppDelegate
+@synthesize hAPIClient = _hAPIClient;
+
++ (hAPIAppDelegate *)sharedDelegate
+{
+    return (hAPIAppDelegate *)[[UIApplication sharedApplication] delegate];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -41,6 +47,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (hAPIClient *)hAPIClient {
+    if (_hAPIClient == NULL) {
+        _hAPIClient = [[hAPIClient alloc] init];
+    }
+    return _hAPIClient;
 }
 
 @end

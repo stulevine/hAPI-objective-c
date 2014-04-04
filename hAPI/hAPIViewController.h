@@ -6,17 +6,17 @@
 //  Copyright (c) 2012 Stuart Levine. All rights reserved.
 //
 
+#import "hAPIAppDelegate.h"
 #import <UIKit/UIKit.h>
-#import "hAPI.h"
+#import "hAPIClient.h"
 
-@interface hAPIViewController : UIViewController
-@property (strong, nonatomic) hAPI *hAPIClient;
+@interface hAPIViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) hAPIClient *hAPIClient;
+@property (strong, nonatomic) NSString *hAPI_Endpoint;
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 @property (strong, nonatomic) IBOutlet UIButton *authButton;
 @property (strong, nonatomic) IBOutlet UITextView *output;
-@property (strong, nonatomic) NSString *hAPI_Key;
-@property (strong, nonatomic) NSString *hAPI_Secret;
 @property (strong, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *passwordLabel;
 @property (strong, nonatomic) IBOutlet UILabel *callLabel;

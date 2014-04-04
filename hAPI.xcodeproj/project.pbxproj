@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1707FC0316527F7300FA67F0 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707FC0116527F7300FA67F0 /* CustomButton.m */; };
 		1707FC06165281E300FA67F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1707FC05165281E300FA67F0 /* QuartzCore.framework */; };
+		1733E9A318ED77A10055FFE1 /* hAPILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1733E9A218ED77A10055FFE1 /* hAPILoginViewController.m */; };
+		1733E9A518ED7EA60055FFE1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1733E9A418ED7EA60055FFE1 /* Security.framework */; };
 		17DA18B116510CB800629E72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DA18B016510CB800629E72 /* UIKit.framework */; };
 		17DA18B316510CB800629E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DA18B216510CB800629E72 /* Foundation.framework */; };
 		17DA18B516510CB800629E72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DA18B416510CB800629E72 /* CoreGraphics.framework */; };
@@ -20,14 +21,16 @@
 		17DA18C716510CB800629E72 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17DA18C616510CB800629E72 /* Default-568h@2x.png */; };
 		17DA18CA16510CB800629E72 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DA18C816510CB800629E72 /* MainStoryboard.storyboard */; };
 		17DA18CD16510CB800629E72 /* hAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DA18CC16510CB800629E72 /* hAPIViewController.m */; };
-		17DA18D616510DC400629E72 /* hAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DA18D416510DC400629E72 /* hAPI.m */; };
-		17DA18DE165126FD00629E72 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DA18DD165126FD00629E72 /* NSData+Base64.m */; };
+		17DCA7A118EC284A00836031 /* hAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DCA79B18EC284A00836031 /* hAPIClient.m */; };
+		17DCA7A218EC284A00836031 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DCA79E18EC284A00836031 /* NSData+Base64.m */; };
+		17DCA7A318EC284A00836031 /* NSURLRequest+AllowAllCerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DCA7A018EC284A00836031 /* NSURLRequest+AllowAllCerts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1707FC0116527F7300FA67F0 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
-		1707FC0216527F7300FA67F0 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		1707FC05165281E300FA67F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1733E9A118ED77A10055FFE1 /* hAPILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hAPILoginViewController.h; sourceTree = "<group>"; };
+		1733E9A218ED77A10055FFE1 /* hAPILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hAPILoginViewController.m; sourceTree = "<group>"; };
+		1733E9A418ED7EA60055FFE1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		17DA18AC16510CB800629E72 /* hAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DA18B016510CB800629E72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17DA18B216510CB800629E72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,10 +47,12 @@
 		17DA18C916510CB800629E72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17DA18CB16510CB800629E72 /* hAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hAPIViewController.h; sourceTree = "<group>"; };
 		17DA18CC16510CB800629E72 /* hAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hAPIViewController.m; sourceTree = "<group>"; };
-		17DA18D316510DC400629E72 /* hAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hAPI.h; path = hAPI/hAPI.h; sourceTree = "<group>"; };
-		17DA18D416510DC400629E72 /* hAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hAPI.m; path = hAPI/hAPI.m; sourceTree = "<group>"; };
-		17DA18DC165126FD00629E72 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "hAPI/NSData+Base64.h"; sourceTree = "<group>"; };
-		17DA18DD165126FD00629E72 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "hAPI/NSData+Base64.m"; sourceTree = "<group>"; };
+		17DCA79B18EC284A00836031 /* hAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = hAPIClient.m; path = hAPIClient/hAPIClient.m; sourceTree = "<group>"; };
+		17DCA79C18EC284A00836031 /* hAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hAPIClient.h; path = hAPIClient/hAPIClient.h; sourceTree = "<group>"; };
+		17DCA79D18EC284A00836031 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "hAPIClient/NSData+Base64.h"; sourceTree = "<group>"; };
+		17DCA79E18EC284A00836031 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "hAPIClient/NSData+Base64.m"; sourceTree = "<group>"; };
+		17DCA79F18EC284A00836031 /* NSURLRequest+AllowAllCerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+AllowAllCerts.h"; path = "hAPIClient/NSURLRequest+AllowAllCerts.h"; sourceTree = "<group>"; };
+		17DCA7A018EC284A00836031 /* NSURLRequest+AllowAllCerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+AllowAllCerts.m"; path = "hAPIClient/NSURLRequest+AllowAllCerts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1733E9A518ED7EA60055FFE1 /* Security.framework in Frameworks */,
 				1707FC06165281E300FA67F0 /* QuartzCore.framework in Frameworks */,
 				17DA18B116510CB800629E72 /* UIKit.framework in Frameworks */,
 				17DA18B316510CB800629E72 /* Foundation.framework in Frameworks */,
@@ -86,6 +92,7 @@
 		17DA18AF16510CB800629E72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1733E9A418ED7EA60055FFE1 /* Security.framework */,
 				1707FC05165281E300FA67F0 /* QuartzCore.framework */,
 				17DA18B016510CB800629E72 /* UIKit.framework */,
 				17DA18B216510CB800629E72 /* Foundation.framework */,
@@ -97,12 +104,12 @@
 		17DA18B616510CB800629E72 /* hAPIClient */ = {
 			isa = PBXGroup;
 			children = (
-				1707FC0116527F7300FA67F0 /* CustomButton.m */,
-				1707FC0216527F7300FA67F0 /* CustomButton.h */,
 				17DA18BF16510CB800629E72 /* hAPIAppDelegate.h */,
 				17DA18C016510CB800629E72 /* hAPIAppDelegate.m */,
 				17DA18CB16510CB800629E72 /* hAPIViewController.h */,
 				17DA18CC16510CB800629E72 /* hAPIViewController.m */,
+				1733E9A118ED77A10055FFE1 /* hAPILoginViewController.h */,
+				1733E9A218ED77A10055FFE1 /* hAPILoginViewController.m */,
 				17DA18C816510CB800629E72 /* MainStoryboard.storyboard */,
 				17DA18B716510CB800629E72 /* Supporting Files */,
 			);
@@ -127,10 +134,12 @@
 		17DA18D716510DCD00629E72 /* hAPI */ = {
 			isa = PBXGroup;
 			children = (
-				17DA18D316510DC400629E72 /* hAPI.h */,
-				17DA18D416510DC400629E72 /* hAPI.m */,
-				17DA18DC165126FD00629E72 /* NSData+Base64.h */,
-				17DA18DD165126FD00629E72 /* NSData+Base64.m */,
+				17DCA79C18EC284A00836031 /* hAPIClient.h */,
+				17DCA79B18EC284A00836031 /* hAPIClient.m */,
+				17DCA79D18EC284A00836031 /* NSData+Base64.h */,
+				17DCA79E18EC284A00836031 /* NSData+Base64.m */,
+				17DCA79F18EC284A00836031 /* NSURLRequest+AllowAllCerts.h */,
+				17DCA7A018EC284A00836031 /* NSURLRequest+AllowAllCerts.m */,
 			);
 			name = hAPI;
 			sourceTree = "<group>";
@@ -202,12 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DCA7A118EC284A00836031 /* hAPIClient.m in Sources */,
 				17DA18BD16510CB800629E72 /* main.m in Sources */,
 				17DA18C116510CB800629E72 /* hAPIAppDelegate.m in Sources */,
 				17DA18CD16510CB800629E72 /* hAPIViewController.m in Sources */,
-				17DA18D616510DC400629E72 /* hAPI.m in Sources */,
-				17DA18DE165126FD00629E72 /* NSData+Base64.m in Sources */,
-				1707FC0316527F7300FA67F0 /* CustomButton.m in Sources */,
+				1733E9A318ED77A10055FFE1 /* hAPILoginViewController.m in Sources */,
+				17DCA7A218EC284A00836031 /* NSData+Base64.m in Sources */,
+				17DCA7A318EC284A00836031 /* NSURLRequest+AllowAllCerts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
