@@ -42,9 +42,9 @@
 
 - (void)resetHAPI
 {
-    self.hAPI_ClientID = @"";
-    self.hAPI_Key = @"";
-    self.hAPI_Secret = @"";
+    [self setHAPI_ClientID:nil];
+    [self setHAPI_Key: nil];
+    [self setHAPI_Secret:nil];
 }
 
 - (BOOL)authenticated
@@ -247,13 +247,13 @@
     if (error) NSLog(@"[%@ %@] JSON error: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), error.localizedDescription);
     NSLog(@"%@", results);
     if ([results valueForKeyPath:@"authkey"] != nil) {
-        self.hAPI_Key = [results valueForKeyPath:@"authkey.key"];
-        self.hAPI_Secret = [results valueForKeyPath:@"authkey.secret"];
+        [self setHAPI_Key:[results valueForKeyPath:@"authkey.key"]];
+        [self setHAPI_Secret:[results valueForKeyPath:@"authkey.secret"]];
         return results;
     }
     else {
-        self.hAPI_Key = [results valueForKeyPath:@"response.authkey.key"];
-        self.hAPI_Secret = [results valueForKeyPath:@"response.authkey.secret"];
+        [self setHAPI_Key:[results valueForKeyPath:@"response.authkey.key"]];
+        [self setHAPI_Secret:[results valueForKeyPath:@"response.authkey.secret"]];
         return [results valueForKeyPath:@"response"];
     }
 }
